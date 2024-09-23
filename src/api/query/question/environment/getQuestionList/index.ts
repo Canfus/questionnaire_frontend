@@ -1,0 +1,1 @@
+export { useGetEnvQuestionListQuery } from './getQuestionList';

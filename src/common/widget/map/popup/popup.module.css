@@ -1,0 +1,55 @@
+.popup__idea {
+  border-radius: 1px;
+}
+
+.idea__title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.rubric__name {
+  display: flex;
+  align-items: center;
+
+  column-gap: 8px;
+
+  font-size: 12px;
+}
+
+.rubric__color {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+}
+
+.like__button {
+  background-color: var(--white-color);
+
+  border: 1px solid var(--gray-color);
+  border-radius: 4px;
+
+  padding: 4px 6px;
+
+  cursor: pointer;
+
+  transition: border-color 100ms;
+}
+
+.like__button:hover {
+  border-color: var(--primary-hover-color);
+}
+
+.like__button:active {
+  border-color: var(--primary-active-color);
+}
+
+.like__icon {
+  color: var(--dark-gray-color);
+
+  margin-right: 2px;
+}
+
+.like__icon--fulfilled {
+  color: var(--danger-color);
+}

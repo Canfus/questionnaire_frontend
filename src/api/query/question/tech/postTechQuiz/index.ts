@@ -1,0 +1,1 @@
+export { usePostTechQuizMutation } from './postTechQuiz';

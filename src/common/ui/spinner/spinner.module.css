@@ -1,0 +1,15 @@
+.spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
+  border-top-color: transparent;
+  border-right-color: transparent;
+  animation: rotate 1000ms cubic-bezier(0.24, 0.94, 0.81, 0.22) infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(720deg);
+  }
+}

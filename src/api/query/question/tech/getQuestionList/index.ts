@@ -1,0 +1,1 @@
+export { useGetTechQuestionListQuery } from './getQuestionList';

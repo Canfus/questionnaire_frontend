@@ -1,0 +1,154 @@
+.select {
+  position: relative;
+
+  width: 100%;
+  min-width: 200px;
+
+  font-size: 14px;
+}
+
+.select__trigger {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 10px;
+
+  background-color: var(--white-color);
+
+  border: 1px solid var(--dark-gray-color);
+  border-radius: 10px;
+
+  font-size: 14px;
+
+  transition: all 150ms;
+}
+
+.select__trigger[data-state='open'] {
+  border-color: var(--black-color);
+}
+
+.select__trigger:not(:disabled) {
+  cursor: pointer;
+}
+
+.select__trigger:not(:disabled):hover {
+  border-color: var(--black-color);
+}
+
+.select__trigger--invalid {
+  border-color: var(--danger-color);
+}
+
+.trigger__icon {
+  width: 24px;
+  height: 24px;
+
+  color: var(--dark-gray-color);
+
+  transition: transform 150ms;
+}
+
+.trigger__icon[data-state='open'] {
+  color: var(--black-color);
+
+  transform: rotate(180deg);
+}
+
+.trigger__icon * {
+  stroke: currentColor;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: -1;
+}
+
+.select__options__wrapper {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+
+  width: 100%;
+  max-height: 250px;
+
+  display: grid;
+  grid-template-rows: 0fr;
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  overflow: hidden;
+  overflow-y: auto;
+
+  z-index: 10;
+
+  transition: grid-template-rows 100ms;
+}
+
+.select__options__wrapper::-webkit-scrollbar {
+  width: 12px;
+
+  background-color: transparent;
+}
+
+.select__options__wrapper::-webkit-scrollbar-thumb {
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  border: 4px solid transparent;
+  border-radius: 12px;
+
+  background-clip: padding-box;
+}
+
+.select__options__wrapper[data-state='open'] {
+  grid-template-rows: 1fr;
+
+  background-color: var(--white-color);
+  border-color: var(--dark-gray-color);
+}
+
+.select__options {
+  min-height: 0;
+
+  list-style: none;
+}
+
+.options__item {
+  position: relative;
+
+  width: 100%;
+
+  padding: 10px 12px;
+
+  background-color: transparent;
+
+  text-align: start;
+
+  border: none;
+
+  transition: all 100ms;
+}
+
+.options__item:not(:disabled):hover {
+  background-color: #efefef;
+}
+
+.options__item[data-selected='true']::after {
+  content: '•';
+
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
+.options__item:not(:disabled) {
+  cursor: pointer;
+}

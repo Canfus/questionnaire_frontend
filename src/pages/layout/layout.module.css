@@ -1,0 +1,45 @@
+.notification__accept {
+  background-color: transparent;
+
+  padding: 4px 8px;
+
+  border: 1px solid var(--dark-gray-color);
+  border-radius: 4px;
+
+  margin-top: 12px;
+
+  cursor: pointer;
+
+  transition: border-color 150ms;
+}
+
+.notification__accept:hover {
+  border-color: var(--primary-hover-color);
+}
+
+.layout {
+  width: 100%;
+}
+
+.layout__button {
+  position: fixed;
+  right: -100%;
+  bottom: 24px;
+
+  width: 36px;
+  height: 36px;
+
+  padding: 6px;
+
+  background-color: var(--white-color);
+
+  border-radius: 6px;
+
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
+
+  transition: right 150ms ease-in-out;
+}
+
+.layout__button--visible {
+  right: 24px;
+}

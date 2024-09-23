@@ -1,0 +1,57 @@
+[
+  {
+    "id": 4,
+    "count": 0,
+    "icon": "/media/1646939790_6-krot-info-p-smeshnie-udostovereniya-smeshnie-foto-22_1jb5MSQ.jpg",
+    "title": "Улично дорожная сеть",
+    "description": "Улично дорожная сеть",
+    "color": "#7133FF"
+  },
+  {
+    "id": 6,
+    "count": 0,
+    "icon": "/media/1646939790_6-krot-info-p-smeshnie-udostovereniya-smeshnie-foto-22_ATw7L0V.jpg",
+    "title": "Общественные пространства",
+    "description": "Общественные пространства",
+    "color": "#FF7633"
+  },
+  {
+    "id": 2,
+    "count": 2,
+    "icon": "/media/1646939790_6-krot-info-p-smeshnie-udostovereniya-smeshnie-foto-22.jpg",
+    "title": "Историческое и культурное наследие",
+    "description": "Историческое и культурное наследие",
+    "color": "#FF0000"
+  },
+  {
+    "id": 7,
+    "count": 0,
+    "icon": "/media/1646939790_6-krot-info-p-smeshnie-udostovereniya-smeshnie-foto-22_b2NKLar.jpg",
+    "title": "Общественный транспорт",
+    "description": "Общественный транспорт",
+    "color": "#DC33FF"
+  },
+  {
+    "id": 3,
+    "count": 0,
+    "icon": "/media/1646939790_6-krot-info-p-smeshnie-udostovereniya-smeshnie-foto-22_DKKyRI1.jpg",
+    "title": "Социальная инфраструктура",
+    "description": "Социальная инфраструктура",
+    "color": "#335BFF"
+  },
+  {
+    "id": 5,
+    "count": 0,
+    "icon": "/media/1646939790_6-krot-info-p-smeshnie-udostovereniya-smeshnie-foto-22_GqgLpqO.jpg",
+    "title": "Жилая застройка",
+    "description": "Жилая застройка",
+    "color": "#FFDB33"
+  },
+  {
+    "id": 0,
+    "title": "Все",
+    "description": null,
+    "icon": null,
+    "count": 2
+  }
+]

@@ -1,0 +1,1 @@
+export { useGetDistrictListQuery } from './getDistrict';

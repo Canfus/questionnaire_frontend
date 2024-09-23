@@ -1,0 +1,1 @@
+export { usePostEnvQuizMutation } from './postEnvQuiz';

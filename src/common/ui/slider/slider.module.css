@@ -1,0 +1,143 @@
+.slider__wrapper {
+  width: 100%;
+}
+
+.slider {
+  position: relative;
+
+  width: 100%;
+  min-width: 200px;
+  height: 16px;
+
+  display: flex;
+  align-items: center;
+
+  user-select: none;
+  touch-action: none;
+}
+
+.slider__track {
+  position: relative;
+
+  width: 100%;
+  height: 6px;
+
+  border-radius: 4px;
+
+  background-color: #ececec;
+}
+
+.slider__range {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  height: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--black-color);
+
+  border-radius: 5px;
+}
+
+.slider__dot {
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background-color: transparent;
+
+  transition: background-color 150ms;
+}
+
+.slider:not(:disabled):hover .slider__dot:not(:first-child) {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.slider__thumb {
+  position: relative;
+
+  width: 16px;
+  height: 16px;
+
+  display: block;
+
+  border-radius: 50%;
+
+  background-color: #d9d9d9;
+
+  transition: background-color 150ms;
+
+  outline: none;
+}
+
+.slider__thumb::before {
+  content: '';
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 10px;
+  height: 10px;
+
+  border: 0 solid transparent;
+  border-radius: 50%;
+
+  background-color: var(--white-color);
+
+  transition: all 50ms;
+}
+
+.slider:not(:disabled):hover .slider__thumb {
+  background-color: var(--dark-gray-color);
+}
+
+.slider:not(:disabled):hover .slider__thumb::before {
+  border-width: 1px;
+}
+
+.slider:not(:disabled):active .slider__thumb {
+  background-color: var(--black-color);
+}
+
+.slider:not(:disabled):hover .thumb__value {
+  opacity: 1;
+}
+
+.thumb__value {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 2px 4px;
+
+  border-radius: 3px;
+
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.25);
+
+  font-size: 12px;
+
+  opacity: 0;
+
+  background-color: var(--white-color);
+
+  transition: opacity 100ms;
+}
+
+.values__wrapper {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 12px;
+}
+

@@ -1,0 +1,40 @@
+.layout {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  padding: 24px;
+}
+
+.title__wrapper {
+  width: 100%;
+  max-width: 1280px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  row-gap: 24px;
+}
+
+.layout__title {
+  font-size: 24px;
+  font-weight: 800;
+
+  text-align: center;
+}
+
+.layout__description {
+  align-self: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  .layout {
+    padding: 60px;
+  }
+}

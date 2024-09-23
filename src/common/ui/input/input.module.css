@@ -1,0 +1,26 @@
+.input {
+  width: 100%;
+
+  outline: none;
+
+  border: 1px solid var(--dark-gray-color);
+  border-radius: 10px;
+
+  padding: 12px 10px;
+
+  caret-color: var(--primary-color);
+
+  transition: all 150ms;
+}
+
+.input:read-only {
+  cursor: default;
+}
+
+.input:not(:read-only and :disabled):hover, :focus {
+  border-color: var(--black-color);
+}
+
+.input--invalid {
+  border-color: var(--danger-color);
+}

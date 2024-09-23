@@ -1,0 +1,41 @@
+.description {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  row-gap: 20px;
+}
+
+.description__header {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  column-gap: 24px;
+}
+
+.header__icon {
+  width: 36px;
+  height: 36px;
+
+  padding: 6px;
+
+  background-color: var(--black-color);
+
+  border: none;
+}
+
+.header__title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.description__content {
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 400;
+}

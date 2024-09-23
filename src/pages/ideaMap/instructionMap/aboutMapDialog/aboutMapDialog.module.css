@@ -1,0 +1,42 @@
+.dialog {
+  width: 100%;
+
+  overflow-y: auto;
+}
+
+.dialog__description {
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 400;
+
+  margin-bottom: 24px;
+}
+
+.dialog__preview {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+
+  object-fit: cover;
+
+  border: 1px solid var(--gray-color);
+  border-radius: 10px;
+}
+
+.dialog__control-description {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+
+  gap: 40px;
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .dialog__description {
+    margin-bottom: 60px;
+  }
+
+  .dialog__control-description {
+    margin-top: 60px;
+  }
+}

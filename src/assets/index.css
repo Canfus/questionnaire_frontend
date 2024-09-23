@@ -1,0 +1,49 @@
+@import './fonts/fonts.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --primary-color: #5d82a4;
+  --primary-dark-color: #0e4267;
+  --primary-footer-color: #0b2f48;
+  --white-color: #ffffff;
+  --black-color: #12131a;
+  --dark-gray-color: #bbbbbb;
+  --gray-color: #dcdcdc;
+  --danger-color: #e92b2b;
+  --primary-hover-color: #89b4dc;
+  --primary-active-color: #51708c;
+  --map-stroke-polygon-color: #3388ff;
+  --map-fill-polygon-color: #3388ff00;
+}
+
+.is-active {
+  opacity: 1;
+}
+
+.leaflet-control-attribution > a > svg {
+  width: 0;
+}
+
+.leaflet-container {
+  z-index: 0;
+}
+
+.leaflet-interactive {
+  stroke: var(--map-stroke-polygon-color);
+  fill: var(--map-fill-polygon-color);
+
+  stroke-width: 2px;
+}
+
+.fullscreen {
+  overflow: hidden;
+
+  transform: none;
+}

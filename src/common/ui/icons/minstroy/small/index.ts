@@ -1,0 +1,1 @@
+export { MinstroySmallIcon } from './minstroySmall';

@@ -1,0 +1,54 @@
+.picker {
+  width: 100%;
+}
+
+.picker__title {
+  width: 100%;
+
+  font-size: 14px;
+}
+
+.picker__errors {
+  margin-top: 12px;
+
+  font-size: 12px;
+
+  color: var(--danger-color);
+}
+
+.picker__actions {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  column-gap: 20px;
+  row-gap: 12px;
+
+  margin-top: 12px;
+}
+
+.picker__files {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .picker__actions {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .picker__title {
+    font-size: 16px;
+  }
+
+  .picker__files {
+    font-size: 16px;
+  }
+}

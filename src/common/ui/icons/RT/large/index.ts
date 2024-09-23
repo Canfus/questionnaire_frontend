@@ -1,0 +1,1 @@
+export { RtLargeIcon } from './rtLarge';

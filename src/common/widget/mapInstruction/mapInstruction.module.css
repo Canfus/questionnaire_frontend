@@ -1,0 +1,25 @@
+.instruction {
+  width: 220px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  row-gap: 40px;
+}
+
+.instruction__description {
+  width: 100%;
+
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 400;
+
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .instruction {
+    row-gap: 70px;
+  }
+}

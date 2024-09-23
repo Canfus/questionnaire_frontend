@@ -1,0 +1,1 @@
+export { useGetIdeaByIdQuery } from './getIdeaById';

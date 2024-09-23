@@ -1,0 +1,1 @@
+export { LogoSmall } from './logoSmall';

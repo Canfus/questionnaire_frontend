@@ -1,0 +1,1 @@
+export { ModeratePointIcon } from './moderatePoint';

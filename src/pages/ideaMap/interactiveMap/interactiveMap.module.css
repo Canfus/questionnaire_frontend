@@ -1,0 +1,39 @@
+.interactive__map {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.map {
+  width: 100%;
+
+  border: none;
+  border-radius: 0;
+}
+
+.links {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 20px 80px;
+
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .map {
+    height: 800px;
+  }
+
+  .links {
+    flex-direction: row;
+
+    margin-bottom: 60px;
+  }
+}

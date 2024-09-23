@@ -1,0 +1,33 @@
+.step__wrapper {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  row-gap: 12px;
+
+  color: var(--black-color);
+}
+
+.step__index {
+  font-size: clamp(16px, 4vw, 24px);
+  font-weight: 700;
+}
+
+.step__required {
+  color: var(--danger-color);
+
+  margin-left: 4px;
+}
+
+.step__title {
+  font-size: clamp(16px, 4vw, 24px);
+  font-weight: 700;
+}
+
+.step__label {
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 400;
+}

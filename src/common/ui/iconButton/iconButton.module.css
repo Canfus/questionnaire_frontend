@@ -1,0 +1,14 @@
+.button {
+  width: 24px;
+  height: 24px;
+
+  background-color: transparent;
+
+  border: none;
+
+  color: var(--primary-dark-color);
+}
+
+.button:not(:disabled) {
+  cursor: pointer;
+}

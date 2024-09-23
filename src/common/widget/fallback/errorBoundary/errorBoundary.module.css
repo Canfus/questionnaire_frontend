@@ -1,0 +1,20 @@
+.fallback {
+  width: 100dvw;
+  height: 100dvh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  row-gap: 12px;
+}
+
+.fallback__message {
+  max-width: 400px;
+
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 400;
+
+  text-align: start;
+}

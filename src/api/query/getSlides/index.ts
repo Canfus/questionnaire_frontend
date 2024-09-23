@@ -1,0 +1,1 @@
+export { useGetSlidesQuery } from './getSlides';

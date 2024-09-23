@@ -1,0 +1,1 @@
+export { ScaleIcon } from './scale';

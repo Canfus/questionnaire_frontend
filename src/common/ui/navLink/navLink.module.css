@@ -1,0 +1,26 @@
+.link {
+  position: relative;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  color: var(--black-color);
+
+  text-decoration: none;
+
+  transition: color 150ms;
+}
+
+.link:not(:disabled):hover {
+  color: var(--primary-hover-color);
+}
+
+.link--active {
+  color: var(--primary-active-color);
+}
+
+@media screen and (min-width: 1280px) {
+  .link {
+    font-weight: 400;
+  }
+}
